@@ -1,0 +1,222 @@
+body {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  background-color: #171a21;
+  color: #c4c4c4;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin-top: 100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Estilos para el contenedor del header */
+.header-container {
+  display: flex;
+  justify-content: center; 
+  width: 100%;
+  position: fixed;
+  z-index: 1000; 
+  background: linear-gradient(to bottom, #334b68, #171a21);
+}
+
+/* Estilos para el header */
+.header {
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Estilos para el logo */
+.logoCoC img {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+}
+.logo {
+  width: 40px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para la barra de navegación */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  font-size: 1.2rem;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.5s;
+}
+
+.navbar ul li a:hover {
+  color: rgb(191, 255, 0);
+}
+.checkbox{
+   display: none;
+}
+.nav-toggle-label {
+  display: none;
+  cursor: pointer;
+}
+
+/* Estilos para el main */
+.article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+img.banner1 {
+  width: 100%; 
+  height: auto;
+  box-shadow: 0 0 20px rgba(27, 40, 56, 1.5)
+}
+
+.contenedorbienvenida {
+  grid-column: span 2;
+  margin-top: 100px; 
+}
+
+/* Estilos para el texto del mensaje de bienvenida */
+.contenedorbienvenida h1 {
+  font-size: 40px; 
+  margin-bottom: 20px; 
+  color: #c6d4df;
+}
+.contenedorbienvenida h2 {
+    font-size: 30px; 
+    margin-bottom: 20px; 
+    color: #abcfea;
+}
+.contenedorbienvenida h3 {
+  font-size: 20px; 
+  margin-bottom: 20px; 
+}
+
+.contenedortops {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.contenedortops2 {
+  grid-column: span 2;
+}
+
+.seccion1,
+.seccion2,
+.seccion3,
+.seccion4,
+.seccion5 {
+  background: linear-gradient(to bottom, #334b68, #171a21);;
+  padding: 20px;
+  color: #ecf0f1;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(27, 40, 56, 1.5);
+}
+.seccion5 {
+  background: linear-gradient(to top, #334b68, #171a21);;
+}
+.SistemaRanking{
+  font-size: 20px;
+}
+
+.button {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.FooterTwo{
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Media queries para hacer la página responsiva */
+@media screen and (max-width: 768px) {
+  /* Estilos para dispositivos móviles */
+  .navbar {
+    background-color: #1b2838;
+    text-align: center;
+  }
+
+  .navbar ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #1b2838;
+    text-align: center;
+  }
+
+  .navbar ul.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid #fff;
+  }
+
+  .navbar ul li:last-child {
+    border-bottom: none;
+  }
+
+  .navbar ul li a {
+    padding: 10px 0;
+  }
+
+  .navbar .nav-toggle-label {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 24px;
+  }
+
+  #nav-toggle:checked + .nav-toggle-label {
+    display: block;
+  }
+
+  #nav-toggle:checked + .nav-toggle-label + ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article {
+    grid-template-columns: 1fr;
+  }
+
+  .contenedortops {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+/* A partir de aca catalogo.html */
+
+/* A partir de aquí catalogo.html */
+
+
+

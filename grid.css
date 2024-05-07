@@ -39,7 +39,7 @@ body {
 
 /* Estilos para el logo */
 .logoCoC img {
-  width: 200px;
+  width: 150px;
   max-width: 100%;
   height: auto;
 }
@@ -56,7 +56,7 @@ body {
   padding: 0;
   display: flex;
   gap: 15px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .navbar ul li a {
@@ -148,6 +148,9 @@ img.banner1 {
 .button:hover {
   background-color: #555;
 }
+.footer{
+  background: linear-gradient(to top, #334b68, #171a21);
+}
 .FooterTwo{
   display: flex;
   justify-content: flex-end;
@@ -219,16 +222,14 @@ img.banner1 {
 .container2 {
   margin-top: 100px;
   margin: 0 auto;
-  padding-top: 130px;
+  padding-top: 180px;
 }
 .catalogo{
   display: flex;
   text-align: center;
   justify-content: center;
   font-size: 40px; 
-  
   color: #c6d4df;
-  background: linear-gradient(to top, #171a21, #171a21);;
 }
 
 .carrusel {

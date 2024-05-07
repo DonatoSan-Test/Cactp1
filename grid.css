@@ -5,6 +5,7 @@ body {
   color: #c4c4c4;
   margin: 0;
   line-height: 1.5;
+
 }
 
 .container {
@@ -12,6 +13,7 @@ body {
   margin-top: 100px;
   margin: 0 auto;
   padding: 0 20px;
+
 }
 
 /* Estilos para el contenedor del header */
@@ -22,6 +24,7 @@ body {
   position: fixed;
   z-index: 1000; 
   background: linear-gradient(to bottom, #334b68, #171a21);
+  
 }
 
 /* Estilos para el header */
@@ -214,9 +217,65 @@ img.banner1 {
     grid-template-columns: repeat(2, 1fr); 
   }
 }
-/* A partir de aca catalogo.html */
 
-/* A partir de aquí catalogo.html */
+.carrusel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%; 
+  height: 100%;
+  display: flex;
+  padding: 30px;
+}
+
+.img-container img {
+  width: 50%; 
+}
+
+.carrusel-1 .img-container {
+  animation: desplazar 15s linear infinite; 
+}
+
+.carrusel-2 .img-container {
+  animation: desplazar 10s linear infinite; 
+}
+
+.carrusel-3 .img-container {
+  animation: desplazar 20s linear infinite; 
+}
+
+@keyframes desplazar {
+  100% {
+      transform: translateX(-50%); 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .img-container img {
+      width: 100%; 
+  }
+
+  .carrusel-1 .img-container {
+      animation-duration: 10s; 
+  }
+
+  .carrusel-2 .img-container {
+      animation-duration: 7s; 
+  }
+
+  .carrusel-3 .img-container {
+      animation-duration: 15s; 
+  }
+}
+
 
 
 

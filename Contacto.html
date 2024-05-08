@@ -9,48 +9,54 @@
     <link rel="stylesheet" type="text/css" href="header.css" />
   </head>
   <body>
-    <!-- <div class="header-container">
-      <header class="header">
-        <div class="logoCoC">
-          <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
-        </div>
-        <nav class="navbar">
-          <input type="checkbox" class="checkbox" id="nav-toggle" />
-          <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="Esports.html">Esports</a></li>
-            <li><a href="Catalogo.html">Catalogo</a></li>
-            <li><a href="Contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </header>
-    </div> -->
-    <!-- Aca pongo el header del archivo header.js -->
+  
     <header id="header-placeholder"></header>
     <!-- Aca iria el contenido de la pagina -->
-    <div>
-      <!-- Solucionar que el primer <p> no quede escondido abajo de la navbar -->
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
-        laboriosam nostrum ipsam eaque quisquam atque deserunt placeat,
-        quibusdam necessitatibus neque repellendus accusamus aliquid
-        exercitationem nesciunt qui tempora. Doloribus, blanditiis temporibus?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
-        laboriosam nostrum ipsam eaque quisquam atque deserunt placeat,
-        quibusdam necessitatibus neque repellendus accusamus aliquid
-        exercitationem nesciunt qui tempora. Doloribus, blanditiis temporibus?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
-        laboriosam nostrum ipsam eaque quisquam atque deserunt placeat,
-        quibusdam necessitatibus neque repellendus accusamus aliquid
-        exercitationem nesciunt qui tempora. Doloribus, blanditiis temporibus?
-      </p>
-    </div>
+    <div class="container">
+      <div class="contactanos">
+          <h1>¿Tienes alguna duda, sugerencia o comentario sobre nuestros juegos? ¡Contáctanos a través de nuestro formulario y estaremos encantados de ayudarte!</h1>
+      </div>
+      <section>
+          <div class="formulario">
+              <form id="contactForm" onsubmit="return validarFormulario()">
+                  <label for="gamertag">Gamertag:</label>
+                  <input type="text" id="gamertag" name="gamertag" required><br>
+
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required><br>
+
+                  <label for="telefono">Teléfono:</label>
+                  <input type="tel" id="telefono" name="telefono" required><br>
+
+                  <label for="motivo">Motivo de contacto:</label>
+                  <select id="motivo" name="motivo" required>
+                      <option value="">Selecciona un motivo</option>
+                      <option value="consulta">Consulta</option>
+                      <option value="sugerencia">Sugerencia</option>
+                      <option value="queja">Queja</option>
+                  </select><br>
+
+                  <label for="mensaje">Mensaje:</label>
+                  <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br>
+
+                  <label for="suscripcion">Suscribirse para recibir novedades!
+                  </label>
+                  <input type="checkbox" id="suscripcion" name="suscripcion"><br>
+
+                  <label for="imagen">Adjuntar imagen del problema:</label>
+                  <input type="file" id="imagen" name="imagen"><br>
+
+                  <input type="submit" value="Enviar">
+              </form>
+          </div>
+      </section>
+  </div>
+  <div class="space"></div>
     <!-- Aca iria el footer -->
+    <footer id="footer-container" class="footer">
+    </footer>
     <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/formulario.js"></script>
   </body>
 </html>

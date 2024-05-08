@@ -5,7 +5,6 @@ body {
   color: #c4c4c4;
   margin: 0;
   line-height: 1.5;
-
 }
 
 .container {
@@ -13,22 +12,20 @@ body {
   margin-top: 100px;
   margin: 0 auto;
   padding: 0 20px;
-
 }
 
 /* Estilos para el contenedor del header */
-.header-container {
+/* .header-container {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   width: 100%;
   position: fixed;
-  z-index: 1000; 
+  z-index: 1000;
   background: linear-gradient(to bottom, #334b68, #171a21);
-  
-}
+} */
 
 /* Estilos para el header */
-.header {
+/* .header {
   color: #fff;
   padding: 10px 0;
   display: flex;
@@ -36,10 +33,10 @@ body {
   align-items: center;
   width: 100%;
   max-width: 1200px;
-}
+} */
 
 /* Estilos para el logo */
-.logoCoC img {
+/* .logoCoC img {
   width: 200px;
   max-width: 100%;
   height: auto;
@@ -48,10 +45,10 @@ body {
   width: 40px;
   max-width: 100%;
   height: auto;
-}
+} */
 
 /* Estilos para la barra de navegación */
-.navbar ul {
+/* .navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -69,14 +66,14 @@ body {
 
 .navbar ul li a:hover {
   color: rgb(191, 255, 0);
+} */
+.checkbox {
+  display: none;
 }
-.checkbox{
-   display: none;
-}
-.nav-toggle-label {
+/* .nav-toggle-label {
   display: none;
   cursor: pointer;
-}
+} */
 
 /* Estilos para el main */
 .article {
@@ -86,30 +83,30 @@ body {
   padding: 20px;
 }
 img.banner1 {
-  width: 100%; 
+  width: 100%;
   height: auto;
-  box-shadow: 0 0 20px rgba(27, 40, 56, 1.5)
+  box-shadow: 0 0 20px rgba(27, 40, 56, 1.5);
 }
 
 .contenedorbienvenida {
   grid-column: span 2;
-  margin-top: 100px; 
+  margin-top: 100px;
 }
 
 /* Estilos para el texto del mensaje de bienvenida */
 .contenedorbienvenida h1 {
-  font-size: 40px; 
-  margin-bottom: 20px; 
+  font-size: 40px;
+  margin-bottom: 20px;
   color: #c6d4df;
 }
 .contenedorbienvenida h2 {
-    font-size: 30px; 
-    margin-bottom: 20px; 
-    color: #abcfea;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #abcfea;
 }
 .contenedorbienvenida h3 {
-  font-size: 20px; 
-  margin-bottom: 20px; 
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .contenedortops {
@@ -127,16 +124,16 @@ img.banner1 {
 .seccion3,
 .seccion4,
 .seccion5 {
-  background: linear-gradient(to bottom, #334b68, #171a21);;
+  background: linear-gradient(to bottom, #334b68, #171a21);
   padding: 20px;
   color: #ecf0f1;
   border-radius: 5px;
   box-shadow: 0 0 20px rgba(27, 40, 56, 1.5);
 }
 .seccion5 {
-  background: linear-gradient(to top, #334b68, #171a21);;
+  background: linear-gradient(to top, #334b68, #171a21);
 }
-.SistemaRanking{
+.SistemaRanking {
   font-size: 20px;
 }
 
@@ -150,7 +147,7 @@ img.banner1 {
 .button:hover {
   background-color: #555;
 }
-.FooterTwo{
+.FooterTwo {
   display: flex;
   justify-content: flex-end;
 }
@@ -214,7 +211,7 @@ img.banner1 {
   }
 
   .contenedortops {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -229,53 +226,48 @@ img.banner1 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 200%; 
+  width: 200%;
   height: 100%;
   display: flex;
   padding: 30px;
 }
 
 .img-container img {
-  width: 50%; 
+  width: 50%;
 }
 
 .carrusel-1 .img-container {
-  animation: desplazar 15s linear infinite; 
+  animation: desplazar 15s linear infinite;
 }
 
 .carrusel-2 .img-container {
-  animation: desplazar 10s linear infinite; 
+  animation: desplazar 10s linear infinite;
 }
 
 .carrusel-3 .img-container {
-  animation: desplazar 20s linear infinite; 
+  animation: desplazar 20s linear infinite;
 }
 
 @keyframes desplazar {
   100% {
-      transform: translateX(-50%); 
+    transform: translateX(-50%);
   }
 }
-
 
 @media (max-width: 768px) {
   .img-container img {
-      width: 100%; 
+    width: 100%;
   }
 
   .carrusel-1 .img-container {
-      animation-duration: 10s; 
+    animation-duration: 10s;
   }
 
   .carrusel-2 .img-container {
-      animation-duration: 7s; 
+    animation-duration: 7s;
   }
 
   .carrusel-3 .img-container {
-      animation-duration: 15s; 
+    animation-duration: 15s;
   }
 }
-
-
-
-
